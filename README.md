@@ -1,7 +1,7 @@
 # artisticode
 artisticode
 
-一些需要遵循的规则请查看master分支的README.md
+请先仔细查看master branch的README.md
 
 简要操作:
 - fork main分支
