@@ -29,6 +29,6 @@ artisticode
 7. 完善ThreadStateManager类中的方法
 
 
-### 相关类的设计请放在thread.state包下
+### 相关类的设计请放在artisticode-boot工程的thread.state包下
 
 ### 本次奖励内容:微信红包(XX￥)
