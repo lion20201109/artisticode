@@ -5,7 +5,6 @@ import org.artisticode.boot.utils.map.MapUtils;
 import org.artisticode.boot.utils.exception.ThrowNotStackException;
 import org.artisticode.boot.utils.string.StringUtils;
 import org.artisticode.boot.utils.validate.Validate;
-import lombok.EqualsAndHashCode;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -218,7 +217,6 @@ import java.util.*;
  limitations under the License.
 
  */
-@EqualsAndHashCode
 public class ObjectUtils {
     private static final char AT_SIGN = '@';
     public static final Null NULL = new Null();

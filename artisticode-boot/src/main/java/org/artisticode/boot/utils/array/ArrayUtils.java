@@ -1,3 +1,13 @@
+package org.artisticode.boot.utils.array;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.BitSet;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.Map.Entry;
 /**
  *
  Apache License
@@ -203,18 +213,6 @@
  limitations under the License.
 
  */
-
-package org.artisticode.boot.utils.array;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.BitSet;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
-import java.util.Map.Entry;
-
 public class ArrayUtils {
     public static final Object[] EMPTY_OBJECT_ARRAY = new Object[0];
     public static final Class<?>[] EMPTY_CLASS_ARRAY = new Class[0];

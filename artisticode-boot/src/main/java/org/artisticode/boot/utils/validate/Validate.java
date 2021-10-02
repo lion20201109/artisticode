@@ -366,9 +366,9 @@ public class Validate {
         notNull(iterable);
         int i = 0;
 
-        for(Iterator it = iterable.iterator(); it.hasNext(); ++i) {
+        for(Iterator<?> it = iterable.iterator(); it.hasNext(); ++i) {
             if (it.next() == null) {
-                Object[] values2 = ArrayUtils.addAll(values, new Object[]{i});
+                Object[] values2 = ArrayUtils.addAll(values, i);
                 throw new IllegalArgumentException(String.format(message, values2));
             }
         }
@@ -549,7 +549,7 @@ public class Validate {
 
     public static void isAssignableFrom(Class<?> superType, Class<?> type) {
         if (!superType.isAssignableFrom(type)) {
-            throw new IllegalArgumentException(String.format("Cannot assign a %s to a %s", type == null ? "null" : type.getName(), superType.getName()));
+            throw new IllegalArgumentException(String.format("Cannot assign a %s to a %s", type.getName(), superType.getName()));
         }
     }
 
